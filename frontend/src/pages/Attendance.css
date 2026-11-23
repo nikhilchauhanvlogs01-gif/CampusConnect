@@ -1,0 +1,174 @@
+
+.attendance-page {
+  min-height: 100vh;
+  background: #080d1b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #111a30;
+  border-bottom: 1px solid #263451;
+}
+
+.attendance-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.attendance-header button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #6d4aff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.attendance-content {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px 5%;
+}
+
+.attendance-welcome {
+  margin-bottom: 30px;
+}
+
+.attendance-welcome h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.attendance-welcome p,
+.attendance-note {
+  color: #cbd5e1;
+}
+
+.attendance-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.attendance-summary-card {
+  background: linear-gradient(135deg, #172b52, #263f70);
+  border: 1px solid #3b5685;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+
+.attendance-summary-card svg {
+  width: 30px;
+  height: 30px;
+  color: #c4b5fd;
+}
+
+.attendance-summary-card h3 {
+  font-size: 30px;
+  margin: 15px 0 5px;
+}
+
+.attendance-summary-card p {
+  color: #cbd5e1;
+}
+
+.attendance-section {
+  margin-top: 40px;
+}
+
+.attendance-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.attendance-section h2 svg {
+  color: #a78bfa;
+}
+
+.subject-card {
+  background: #141f38;
+  border: 1px solid #293957;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.subject-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.subject-info h3 {
+  margin: 0;
+}
+
+.subject-info span {
+  color: #a78bfa;
+  font-weight: bold;
+}
+
+.attendance-progress {
+  height: 10px;
+  background: #293957;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.attendance-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6d4aff, #38bdf8);
+  border-radius: 20px;
+}
+
+.subject-card p {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.attendance-note {
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .attendance-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .attendance-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-content {
+    padding: 25px 5%;
+  }
+
+  .attendance-welcome h1 {
+    font-size: 25px;
+  }
+
+  .attendance-header {
+    padding: 15px 5%;
+  }
+
+  .attendance-header h2 {
+    font-size: 19px;
+  }
+}

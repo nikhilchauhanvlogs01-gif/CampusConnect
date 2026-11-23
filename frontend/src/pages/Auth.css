@@ -1,0 +1,156 @@
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+  background:
+    radial-gradient(circle at top right, #29245e, transparent 40%),
+    #080d1b;
+  font-family: Inter, sans-serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 42px;
+  background: #111c34;
+  border: 1px solid #293858;
+  border-radius: 20px;
+  box-shadow: 0 25px 70px #00000055;
+}
+
+.auth-logo {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 22px;
+  background: #635bff;
+  border-radius: 16px;
+  color: white;
+}
+
+.auth-card h1 {
+  color: white;
+  text-align: center;
+  font-size: 29px;
+}
+
+.auth-subtitle {
+  color: #9ba8be;
+  text-align: center;
+  font-size: 13px;
+  margin: 12px 0 30px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-card label {
+  color: #dce2ef;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.auth-card select,
+.auth-input {
+  width: 100%;
+  height: 49px;
+  background: #192640;
+  border: 1px solid #344462;
+  border-radius: 9px;
+  color: white;
+  padding: 0 13px;
+  outline: none;
+}
+
+.auth-card select:focus,
+.auth-input:focus-within {
+  border-color: #827cff;
+}
+
+.auth-card select option {
+  background: #192640;
+}
+
+.auth-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #aaa5ff;
+}
+
+.auth-input input {
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 13px;
+}
+
+.auth-input input::placeholder {
+  color: #78869f;
+}
+
+.auth-input button {
+  display: grid;
+  place-items: center;
+  border: none;
+  color: #aab4c9;
+  background: transparent;
+}
+
+.auth-submit {
+  width: 100%;
+  height: 50px;
+  margin-top: 18px;
+  background: #635bff;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.auth-submit:hover {
+  background: #5048e8;
+}
+
+.auth-bottom {
+  text-align: center;
+  color: #9ba8be;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.auth-bottom a {
+  color: #aaa5ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+  color: #aab4c9;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 30px 22px;
+  }
+}
